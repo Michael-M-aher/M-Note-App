@@ -72,7 +72,10 @@ class MyDialog extends StatelessWidget {
                 MyBtn(
                   text: "Discard",
                   onPressed: () {
-                    Navigator.of(context).pop();
+                    text == 'Save'
+                        ? Navigator.of(context).pop()
+                        : Navigator.pushNamedAndRemoveUntil(
+                            context, mainScreen, (route) => false);
                   },
                   color: MyColors.myRed,
                 ),
