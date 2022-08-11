@@ -7,7 +7,7 @@
 
 
 
-# :Floppy Disk: Database
+# :floppy_disk: Database
 
 
 
@@ -42,7 +42,7 @@
 <img src="https://user-images.githubusercontent.com/25803558/184144427-34e0382a-f24d-4d17-968c-a28713ccc89a.png" width="300" height="600" />
 
 
-## :Memo: Note Screen
+## :memo: Note Screen
 
 - Create new note.
 
