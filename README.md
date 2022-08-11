@@ -1,4 +1,4 @@
-# M Note
+# :blue_book: Overview
 
 - Used Flutter with Sqflite to store data locally on the phone. 
 - Applied dark modern ui for better user experience while using the application.
