@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:intl/intl.dart' as intl;
 import '../constants/my_colors.dart';
 
 class NoteCard extends StatelessWidget {
@@ -30,7 +30,7 @@ class NoteCard extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(0, 0, 0, 10),
             child: Text(
               text,
-              textAlign: TextAlign.left,
+              textAlign: isRTL(text) ? TextAlign.right : TextAlign.left,
               softWrap: true,
               style: const TextStyle(
                 color: MyColors.myWhite,
@@ -41,7 +41,7 @@ class NoteCard extends StatelessWidget {
           ),
           subtitle: Text(
             data,
-            textAlign: TextAlign.left,
+            textAlign: isRTL(data) ? TextAlign.right : TextAlign.left,
             maxLines: null,
             softWrap: true,
             style: const TextStyle(
@@ -53,4 +53,8 @@ class NoteCard extends StatelessWidget {
       ),
     );
   }
+}
+
+bool isRTL(String text) {
+  return intl.Bidi.detectRtlDirectionality(text);
 }
