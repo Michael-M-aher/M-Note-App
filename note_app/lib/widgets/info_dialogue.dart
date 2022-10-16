@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 import '../constants/my_colors.dart';
 
 class MyInfoDialog extends StatelessWidget {
@@ -12,7 +13,7 @@ class MyInfoDialog extends StatelessWidget {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       child: Container(
         width: 330,
-        height: 240,
+        height: 160,
         decoration: BoxDecoration(
           color: MyColors.myDarkGrey,
           borderRadius: BorderRadius.circular(15.0),
@@ -24,8 +25,6 @@ class MyInfoDialog extends StatelessWidget {
           children: [
             const MyTitles(title: "Designed by", value: "Divya Kelaskar"),
             const MyTitles(title: "Coded by", value: "Michael Maher"),
-            const MyTitles(title: "Illustrations", value: "Storyset.com"),
-            const MyTitles(title: "Fonts", value: "Google Fonts"),
             Container(
               margin: const EdgeInsets.fromLTRB(0, 25, 0, 0),
               child: Text(

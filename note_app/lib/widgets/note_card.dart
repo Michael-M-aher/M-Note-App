@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart' as intl;
+
 import '../constants/my_colors.dart';
 
 class NoteCard extends StatelessWidget {
